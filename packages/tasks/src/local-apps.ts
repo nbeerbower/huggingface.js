@@ -260,7 +260,7 @@ export const LOCAL_APPS = {
 		docsUrl: "https://www.anaconda.com/products/ai-navigator",
 		mainTask: "text-generation",
 		displayOnModelPage: isLlamaCppGgufModel,
-		deeplink: (model) => new URL(`ainavigator://models/huggingface/${model.id}`),
+		deeplink: (model) => new URL(`ainavigator://huggingface=${model.id}`),
 	},
 	jellybox: {
 		prettyLabel: "Jellybox",
