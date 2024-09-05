@@ -255,6 +255,13 @@ export const LOCAL_APPS = {
 		displayOnModelPage: isLlamaCppGgufModel,
 		deeplink: (model) => new URL(`sanctum://open_from_hf?model=${model.id}`),
 	},
+	ainavigator: {
+		prettyLabel: "Anaconda AI Navigator",
+		docsUrl: "https://www.anaconda.com/products/ai-navigator",
+		mainTask: "text-generation",
+		displayOnModelPage: isLlamaCppGgufModel,
+		deeplink: (model) => new URL(`ainavigator://models/huggingface/${model.id}`),
+	},
 	jellybox: {
 		prettyLabel: "Jellybox",
 		docsUrl: "https://jellybox.com",
